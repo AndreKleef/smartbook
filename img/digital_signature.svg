@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="digital-signature" transform="translate(0 -0.032)">
+    <path id="Path_65" data-name="Path 65" d="M2.43,38.919l36.5-36.576a2,2,0,0,1,1.416-.593h0a1.99,1.99,0,0,1,1.413.587L54.7,15.288a2,2,0,0,1,0,2.833L18.163,54.676Z" transform="translate(4.05 2.87)" fill="red"/>
+    <path id="Path_66" data-name="Path 66" d="M30.088,15.816,31.4,14.5a8.492,8.492,0,0,0,.005-12.037,8.673,8.673,0,0,0-12.037-.005L18.056,3.774Z" transform="translate(30.093 0)" fill="red"/>
+    <path id="Path_67" data-name="Path 67" d="M5.4,16.678.091,33.628A2,2,0,0,0,2,36.229a2.032,2.032,0,0,0,.6-.091l16.925-5.314Z" transform="translate(0 27.803)" fill="red"/>
+    <path id="Path_68" data-name="Path 68" d="M8.221,20.322a1.983,1.983,0,0,0,1.413-.587L22.547,6.805a3.183,3.183,0,0,1,2.517-.895l3.157-3.164a7.206,7.206,0,0,0-8.5,1.226L6.805,16.9a2,2,0,0,0,1.416,3.421Z" transform="translate(10.366 3.091)" fill="red"/>
+  </g>
+</svg>
