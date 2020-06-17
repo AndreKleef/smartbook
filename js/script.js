@@ -1,3 +1,26 @@
+$(document).on('click', '.custom-input-number .cin-increment', function(e) {
+  let $input = $(this).siblings('.cin-input'),
+     val = parseInt($input.val()),
+     max = parseInt($input.attr('max')),
+     step = parseInt($input.attr('step'));
+
+  let temp = val + step;
+  $input.val(temp <= max ? temp : max);
+  // console.log(temp);
+ });
+ $(document).on('click', '.custom-input-number .cin-decrement', function(e) {
+  let $input = $(this).siblings('.cin-input'),
+     val = parseInt($input.val()),
+     min = parseInt($input.attr('min')),
+     step = parseInt($input.attr('step'));
+
+  let temp = val - step;
+  $input.val(temp >= min ? temp : min);
+
+  // console.log(temp);
+});
+
+
 //search
 let search = $('.search__triger div');
 search.on('click', function(){
@@ -13,7 +36,7 @@ search.on('click', function(){
 //sliders
 $(document).ready(function () {
 
-  $('.promo-slider').owlCarousel({
+  $('.promo__slider').owlCarousel({
     animateOut: 'slideOutDown',
     animateIn: 'pulse',
     loop:true,
@@ -28,10 +51,12 @@ $(document).ready(function () {
     }
   });
 
-  $('.about__slider').owlCarousel({
-    nav:true,
+  $('.category-slider').owlCarousel({
+    loop:true,
+    nav:false,
     dots: true,
     margin: 30,
+    stagePadding: 200,
     responsive:{
         0:{
             items:1
@@ -43,7 +68,7 @@ $(document).ready(function () {
             items:3
         },
         1199:{
-            items:4
+            items:5
         }
     }
   });
