@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Описание страницы для SEO и соцсетей">
+	<meta name="keywords" content="ключевые, слова, через, запятую">
+	<title>Умная книга</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/animate.css" type="text/css">
+	<link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css">
+</head>
+<body>
+	<div class="wrapper">
+    <header class="page-header page-header_drop">
+      <div class="page-header__top">
+        <div class="page-header__container container">
+
+          <div class="page-header__top-user">
+            <div class="page-header__top-image icon_size">
+              <img class="page-header__top-pic" src="img/user.svg" alt="">
+            </div>
+            <div class="page-header__top-text">
+              <a class="page-header__top-link" href="">Войти</a> или <a class="page-header__top-link" href="">зарегистрироваться</a>
+            </div>
+          </div>
+
+          <div class="page-header__top-block">
+            <div class="page-header__top-bookmarks">
+              <div class="page-header__bookmarks-image icon_size">
+                <img class="page-header__bookmarks-pic" src="img/bookmark.svg" alt="">
+              </div>
+              <a class="page-header__bookmarks-text" href="">Закладки <span>(2)</span></a>
+            </div>
+            <div class="page-header__top-heart">
+              <div class="page-header__heart-image icon_size">
+                <img class="page-header__heart-pic" src="img/heart.svg" alt="">
+              </div>
+              <a class="page-header__heart-text" href="">Постоянный покупатель</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="page-header__middle">
+        <div class="page-header__middle-container container">
+          <div class="page-header__flex">
+            <a class="page-header__flex-logo" href=""></a>
+            <div class="page-header__delivery">
+              <div class="page-header__delivery-icon icon_size"></div>
+              <div class="page-header__delivery-block">
+                <p class="page-header__delivery-title">Бесплатная доставка</p>
+                <p class="page-header__delivery-text">Покупки на сумму от 3 000 рублей по Саратову доставим бесплатно</p>
+              </div>
+            </div>
+            <div class="page-header__tel">
+              <div class="page-header__tel-icon icon_size"></div>
+              <div class="page-header__tel-block">
+                <p class="page-header__tel-title">Остались вопросы?</p>
+                <p class="page-header__tel-text">+7 (8452) 42-02-82</p>
+              </div>
+            </div>
+            <form class="page-header__search search__triger" action="">
+              <fieldset>
+                <input type="text" class="search_input search_input__active" value="" placeholder="Поиск умной книги">
+                <div></div>
+                <input type="submit" value="" class="search_button__submit">
+              </fieldset>
+            </form>
+            <div class="page-header__basket">
+              <div class="page-header__block">
+                <div class="page-header__basket-icon"></div>
+                <div class="page-header__basket-block">
+                  <p class="page-header__basket-title">13 297 <span>₽</span></p>
+                  <p class="page-header__basket-text">Товаров: <span>3</span></p>
+                </div>
+              </div>
+              <div class="page-header__basket-modal">
+                <div class="page-header__basket-modal__cancel modal-window-cancel">
+                  <div class="page-header__basket-modal__cancel-image"></div>
+                </div>
+                <div class="page-header__basket-modal__item">
+                  <div class="page-header__basket-modal__left">
+                    <div class="page-header__basket-modal__image">
+                      <img class="page-header__basket-modal__image-pic" src="img/product_item.png" alt="">
+                    </div>
+                    <a class="page-header__basket-modal__text" href="">Гарри Поттер. Комплект из 7 книг в футляре (Роулинг Дж.)</a>
+                  </div>
+                  <div class="page-header__basket-modal__right">
+                    <div class="custom-input-number">
+                      <button class="cin-btn cin-btn-1 cin-btn-md cin-decrement" type="button">-</button>
+                      <input class="cin-input basket-quantity" type="number" step="1" value="0" min="0" max="999">
+                      <button class="cin-btn cin-btn-1 cin-btn-md cin-increment" type="button">+</button>
+                    </div>
+                    <p class="page-header__basket-modal__price">79 220 <span>₽</span></p>
+                    <div class="page-header__basket-modal__delete"></div>
+                  </div>
+                </div>
+                <div class="page-header__basket-modal__item">
+                  <div class="page-header__basket-modal__left">
+                    <div class="page-header__basket-modal__image">
+                      <img class="page-header__basket-modal__image-pic" src="img/product_item.png" alt="">
+                    </div>
+                    <a class="page-header__basket-modal__text" href="">Гарри Поттер. Комплект из 7 книг в футляре (Роулинг Дж.)</a>
+                  </div>
+                  <div class="page-header__basket-modal__right">
+                    <div class="custom-input-number">
+                      <button class="cin-btn cin-btn-1 cin-btn-md cin-decrement" type="button">-</button>
+                      <input class="cin-input basket-quantity" type="number" step="1" value="0" min="0" max="999">
+                      <button class="cin-btn cin-btn-1 cin-btn-md cin-increment" type="button">+</button>
+                    </div>
+                    <p class="page-header__basket-modal__price">79 220 <span>₽</span></p>
+                    <div class="page-header__basket-modal__delete"></div>
+                  </div>
+                </div>
+                <div class="page-header__basket-modal__bottom">
+                  <button class="page-header__basket-modal__button button">Купить</button>
+                  <p class="">Итого: <span class="page-header__basket-modal__price">34 234<span> ₽</span></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-header__bottom">
+        <div class="page-header__bottom__container container">
+          <button class="page-header__bottom-button">
+            <p class="page-header__button-text">Оглавление</p>
+            <div class="page-header__button-arrow"></div>
+
+          </button>
+            <nav class="promo__menu">
+              <ul class="promo__list">
+                <li class="promo__item">
+                  <a class="promo__link" href="">
+                    <p class="promo__link-text"><span>Глава 1. </span>Книги</p>
+                    <div class="promo__link-arrow"></div>
+                  </a>
+                  <div class="promo__submenu">
+                    <ul class="promo__sublist">
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Музыкальная литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Музыкальная литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Музыкальная литература</a>
+                      </li>
+                    </ul>
+                    <a class="promo__submenu-button" href="">Показать все</a>
+                  </div>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link" href="">
+                    <p class="promo__link-text"><span>Глава 2. </span>Игры и игрушки</p>
+                    <div class="promo__link-arrow"></div>
+                  </a>
+                  <div class="promo__submenu">
+                    <ul class="promo__sublist">
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Музыкальная литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link" href="">
+                    <p class="promo__link-text"><span>Глава 3. </span>Канцтовары</p>
+                    <div class="promo__link-arrow"></div>
+                  </a>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link" href="">
+                    <p class="promo__link-text"><span>Глава 2. </span>Игры и игрушки</p>
+                    <div class="promo__link-arrow"></div>
+                  </a>
+                  <div class="promo__submenu">
+                    <ul class="promo__sublist">
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Музыкальная литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link" href="">
+                    <p class="promo__link-text"><span>Глава 2. </span>Игры и игрушки</p>
+                    <div class="promo__link-arrow"></div>
+                  </a>
+                  <div class="promo__submenu">
+                    <ul class="promo__sublist">
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Музыкальная литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link" href="">
+                    <p class="promo__link-text"><span>Глава 2. </span>Игры и игрушки</p>
+                    <div class="promo__link-arrow"></div>
+                  </a>
+                  <div class="promo__submenu">
+                    <ul class="promo__sublist">
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Музыкальная литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link" href="">
+                    <p class="promo__link-text"><span>Глава 2. </span>Игры и игрушки</p>
+                    <div class="promo__link-arrow"></div>
+                  </a>
+                  <div class="promo__submenu">
+                    <ul class="promo__sublist">
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Музыкальная литература</a>
+                      </li>
+                      <li class="promo__subitem">
+                        <a class="promo__sublink" href="#">Детская литература</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class=" promo__menu_mobile">
+                <div id="accordion">
+                  <div class="promo-mobile__card card">
+                    <div class="promo-mobile__header card-header" id="heading1">
+                      <button class="promo-mobile__btn btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        <p class="promo__link-text"><span>Глава 1. </span>Книги</p>
+                      </button>
+                    </div>
+                    <div class="promo-mobile__collapse collapse" id="collapse1" aria-labelledby="heading1" data-parent="#accordion">
+                      <div class="promo-mobile__body card-body">
+                        <div class="promo__submenu_mobile">
+                          <ul class="promo__sublist">
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                          </ul>
+                          <a class="promo__submenu-button" href="">Показать все</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="promo-mobile__card card">
+                    <div class="promo-mobile__header card-header" id="heading2">
+                      <button class="promo-mobile__btn btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                        <p class="promo__link-text"><span>Глава 2. </span>Игры и игрушки</p>
+                      </button>
+                    </div>
+                    <div class="promo-mobile__collapse collapse" id="collapse2" aria-labelledby="heading2" data-parent="#accordion">
+                      <div class="promo-mobile__body card-body">
+                        <div class="promo__submenu_mobile">
+                          <ul class="promo__sublist">
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                          </ul>
+                          <a class="promo__submenu-button" href="">Показать все</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="promo-mobile__card card">
+                    <div class="promo-mobile__header card-header" id="heading3">
+                      <button class="promo-mobile__btn btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                        <p class="promo__link-text"><span>Глава 3. </span>Канцтовары</p>
+                      </button>
+                    </div>
+                    <div class="promo-mobile__collapse collapse " id="collapse3" aria-labelledby="heading3" data-parent="#accordion">
+                      <div class="promo-mobile__body card-body">
+                        <div class="promo__submenu_mobile">
+                          <ul class="promo__sublist">
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                          </ul>
+                          <a class="promo__submenu-button" href="">Показать все</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="promo-mobile__card card">
+                    <div class="promo-mobile__header card-header" id="heading4">
+                      <button class="promo-mobile__btn btn btn-link" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                        <p class="promo__link-text"><span>Глава 4. </span>Творчество</p>
+                      </button>
+                    </div>
+                    <div class="promo-mobile__collapse collapse " id="collapse4" aria-labelledby="heading4" data-parent="#accordion">
+                      <div class="promo-mobile__body card-body">
+                        <div class="promo__submenu_mobile">
+                          <ul class="promo__sublist">
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                          </ul>
+                          <a class="promo__submenu-button" href="">Показать все</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="promo-mobile__card card">
+                    <div class="promo-mobile__header card-header" id="heading5">
+                      <button class="promo-mobile__btn btn btn-link" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                        <p class="promo__link-text"><span>Глава 5. </span>Хозтовары</p>
+                      </button>
+                    </div>
+                    <div class="promo-mobile__collapse collapse " id="collapse5" aria-labelledby="heading5" data-parent="#accordion">
+                      <div class="promo-mobile__body card-body">
+                        <div class="promo__submenu_mobile">
+                          <ul class="promo__sublist">
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                          </ul>
+                          <a class="promo__submenu-button" href="">Показать все</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="promo-mobile__card card">
+                    <div class="promo-mobile__header card-header" id="heading6">
+                      <button class="promo-mobile__btn btn btn-link" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                        <p class="promo__link-text"><span>Глава 6. </span>Бренды</p>
+                      </button>
+                    </div>
+                    <div class="promo-mobile__collapse collapse " id="collapse6" aria-labelledby="heading6" data-parent="#accordion">
+                      <div class="promo-mobile__body card-body">
+                        <div class="promo__submenu_mobile">
+                          <ul class="promo__sublist">
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                          </ul>
+                          <a class="promo__submenu-button" href="">Показать все</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="promo-mobile__card card">
+                    <div class="promo-mobile__header card-header" id="heading7">
+                      <button class="promo-mobile__btn btn btn-link" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                        <p class="promo__link-text"><span>Глава 7. </span>Канцмаркет</p>
+                      </button>
+                    </div>
+                    <div class="promo-mobile__collapse collapse " id="collapse7" aria-labelledby="heading7" data-parent="#accordion">
+                      <div class="promo-mobile__body card-body">
+                        <div class="promo__submenu_mobile">
+                          <ul class="promo__sublist">
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Детская литература</a>
+                            </li>
+                            <li class="promo__subitem">
+                              <a class="promo__sublink" href="#">Музыкальная литература</a>
+                            </li>
+                          </ul>
+                          <a class="promo__submenu-button" href="">Показать все</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </nav>
+          <div class="page-header__bottom-buttons">
+            <a class="page-header__bottom-btn" href="">ВПР</a>
+            <a class="page-header__bottom-btn" href="">ОГЭ и ЕГЭ</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="broad">
+      <div class="broad__container container">
+        <div class="broad__block">
+          <a class="broad__block-text broad__block-last" href="#">Главная</a>
+          <a class="broad__block-text broad__block-active" href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </section>
+    <section class="privacy">
+      <div class="privacy__container container">
+        <h2 class="privacy-title subtitle">Политика конфиденциальности</h2>
+        <p class="privacy-text">Настоящая Политика разработана на основании Конституции РФ, Гражданского Кодекса РФ, Трудового Кодекса РФ, и в соответствии с требованиями Федерального закона от 27 июля 2006 г. №152-ФЗ «О персональных данных»</p>
+        <p class="privacy-text">Цель данной Политики – обеспечение прав граждан при обработке их персональных данных, и принятие мер от неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, предоставления, распространения персональных данных, а также от иных неправомерных действий в отношении персональных данных Клиентов ООО «УМНАЯ КНИГА".</p>
+        <p class="privacy-text">Настоящая Политика разработана на основании Конституции РФ, Гражданского Кодекса РФ, Трудового Кодекса РФ, и в соответствии с требованиями Федерального закона от 27 июля 2006 г. №152-ФЗ «О персональных данных»</p>
+        <p class="privacy-text">Цель данной Политики – обеспечение прав граждан при обработке их персональных данных, и принятие мер от неправомерного или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, предоставления, распространения персональных данных, а также от иных неправомерных действий в отношении персональных данных Клиентов ООО «УМНАЯ КНИГА».</p>
+        <p class="privacy-text">Передача третьим лицам, персональных данных без письменного его согласия не допускаются.</p>
+        <p class="privacy-text">Режим конфиденциальности персональных данных снимается в случаях обезличивания или включения их в общедоступные источники персональных данных, если иное не определено законом.</p>
+        <p class="privacy-text">Сотрудники, в обязанность которых входит обработка персональных данных Клиента, обязаны обеспечить каждому возможность ознакомления с документами и материалами, непосредственно затрагивающими его права и свободы, если иное не предусмотрено законом, а также настоящей Политикой.</p>
+        <p class="privacy-text">Персональные данные не могут быть использованы в целях причинения имущественного и морального вреда гражданам, затруднения реализации прав и свобод граждан Российской Федерации. Ограничение прав граждан Российской Федерации на основе использования информации об их социальном происхождении, о расовой, национальной, языковой, религиозной и партийной принадлежности запрещено и карается в соответствии с законодательством.</p>
+        <p class="privacy-text">Юридические и физические лица, в соответствии со своими полномочиями владеющие информацией о гражданах, получающие и использующие ее, несут ответственность в соответствии с законодательством Российской Федерации за нарушение режима защиты, обработки и порядка использования этой информации.</p>
+        <p class="privacy-text">Настоящая политика является обязательным для исполнения всеми сотрудниками, имеющими доступ к персональным данным Клиента.</p>
+        <h3 class="privacy-title">Понятие и состав персональных данных</h3>
+        <p class="privacy-text">Персональные данные - любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).</p>
+        <p class="privacy-text">К персональным данным Клиентов, которые обрабатывает ООО «УМНАЯ КНИГА» относятся:</p>
+        <p class="privacy-text">фамилия, имя, отчество;</p>
+        <p class="privacy-text">пол;</p>
+        <p class="privacy-text">дата и место рождения;</p>
+        <p class="privacy-text">адрес регистрации;</p>
+        <p class="privacy-text">номер телефона;</p>
+        <p class="privacy-text">реквизиты паспорта или иного документа, удостоверяющего личность;</p>
+        <p class="privacy-text">иная необходимая информация, которую граждане добровольно сообщают о себе для работы с ООО «УМНАЯ КНИГА», если ее обработка не запрещена законом.</p>
+        <h3 class="privacy-title">Принципы обработки персональных данных Клиента</h3>
+        <p class="privacy-text">Обработка персональных данных – любое действие (операция) или совокупность действий, совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</p>
+        <p class="privacy-text">ООО «УМНАЯ КНИГА» ведет обработку персональных данных Клиента с использованием средств автоматизации (автоматизированная обработка), и без использования таких средств (неавтоматизированная обработка).</p>
+
+        <p class="privacy-text">Обработка персональных данных должна осуществляться на основе принципов:</p>
+
+        <p class="privacy-text">законности целей и способов обработки персональных данных и добросовестности;</p>
+        <p class="privacy-text">соответствия целей обработки персональных данных целям, заранее определенным и заявленным при сборе персональных данных, а также полномочиям ООО «УМНАЯ КНИГА»;</p>
+        <p class="privacy-text">соответствия объема и характера обрабатываемых персональных данных, способов обработки персональных данных целям обработки персональных данных;</p>
+        <p class="privacy-text"> достоверности персональных данных, их достаточности для целей обработки, недопустимости обработки персональных данных, избыточных по отношению к целям, заявленным при сборе персональных данных;</p>
+        <p class="privacy-text">  недопустимости объединения созданных для несовместимых между собой целей баз данных информационных систем персональных данных;</p>
+        <p class="privacy-text"> уничтожения персональных данных после достижения целей обработки или в случае утраты необходимости в их достижении;</p>
+        <p class="privacy-text">  личной ответственности сотрудников ООО «УМНАЯ КНИГА» за сохранность и конфиденциальность персональных данных, а также носителей этой информации.</p>
+        <p class="privacy-text"> Обязанности</p>
+
+        <p class="privacy-text">  В целях обеспечения прав и свобод человека и гражданина ООО «УМНАЯ КНИГА» при обработке персональных данных Клиента обязано соблюдать следующие общие требования:</p>
+
+        <p class="privacy-text"> обработка персональных данных Клиента может осуществляться исключительно в целях исполнения гражданско-правовых договоров, заключаемых с Клиентами;</p>
+        <p class="privacy-text"> персональные данные Клиента следует получать у него самого. Если персональные данные Клиента, возможно, получить только у третьей стороны, то клиент должен быть уведомлен об этом заранее и от него должно быть получено письменное согласие. Сотрудники ООО «УМНАЯ КНИГА» должны сообщить клиентам о целях, предполагаемых источниках и способах получения персональных данных, а также о характере подлежащих получению персональных данных и последствиях отказа клиента дать письменное согласие на их получение;</p>
+        <p class="privacy-text"> ООО «УМНАЯ КНИГА» не имеет права получать и обрабатывать персональные данные о его расовой, национальной принадлежности, политических взглядах, религиозных или философских убеждениях, состоянии здоровья, интимной жизни, за исключением случаев, предусмотренных законом. В частности, вправе обрабатывать указанные персональные данные Клиента только с его письменного согласия;</p>
+        <p class="privacy-text"> предоставлять Клиенту или его представителю информацию о наличии персональных данных, относящихся к соответствующему субъекту персональных данных, а также предоставить возможность ознакомления с ними при обращении субъекта персональных данных или его представителя либо в течение тридцати дней с даты получения запроса субъекта персональных данных или его представителя;</p>
+        <p class="privacy-text"> хранение и защита персональных данных Клиента от неправомерного их использования или утраты обеспечивается ООО «УМНАЯ КНИГА», за счет его средств в порядке, установленном действующим законодательством РФ;</p>
+        <p class="privacy-text"> в случае выявления недостоверных персональных данных или неправомерных действий с ними оператора при обращении или по запросу Клиента либо уполномоченного органа по защите прав субъектов персональных данных ООО «УМНАЯ КНИГА» обязано осуществить блокирование персональных данных на период проверки;</p>
+        <p class="privacy-text">  в случае подтверждения факта недостоверности персональных данных оператор на основании документов, представленных Клиентом либо уполномоченным органом по защите прав субъектов персональных данных, или иных необходимых документов обязан уточнить персональные данные и снять их блокирование;</p>
+        <p class="privacy-text"> в случае достижения цели обработки персональных данных ООО «УМНАЯ КНИГА» обязано незамедлительно прекратить обработку персональных данных и уничтожить соответствующие персональные данные в срок, не превышающий трех рабочих дней, и уведомить об этом Клиента, а в случае, если обращение или запрос были направлены уполномоченным органом по защите прав субъектов персональных данных, также указанный орган;</p>
+        <p class="privacy-text"> в случае отзыва Клиентом согласия на обработку своих персональных данных ООО «УМНАЯ КНИГА» обязано прекратить обработку персональных данных и уничтожить персональные данные в срок, не превышающий трех рабочих дней, если иное не предусмотрено соглашением между ООО «УМНАЯ КНИГА» и Клиентом. Об уничтожении персональных данных ООО «УМНАЯ КНИГА» обязан уведомить Клиента;</p>
+        <p class="privacy-text"> Клиенты должны быть ознакомлены с документами ООО «УМНАЯ КНИГА», устанавливающими порядок обработки персональных данных соискателей, а также об их правах и обязанностях в этой области.</p>
+
+        </p>
+        <h3 class="privacy-title">Права Клиента</h3>
+        <p class="privacy-text">Право на доступ к информации о самом себе.</p>
+        <p class="privacy-text">Право на определение форм и способов обработки персональных данных.</p>
+        <p class="privacy-text"> Право на отзыв согласия на обработку персональных данных.</p>
+        <p class="privacy-text">  Право ограничивать способы и формы обработки персональных данных, запрет на распространение персональных данных без его согласия.</p>
+        <p class="privacy-text"> Право требовать изменение, уточнение, уничтожение информации о самом себе.</p>
+        <p class="privacy-text"> Право обжаловать неправомерные действия или бездействия по обработке персональных данных и требовать соответствующей компенсации в суде.</p>
+        <p class="privacy-text"> Право на дополнение персональных данных оценочного характера заявлением, выражающим его собственную точку зрения.</p>
+        <p class="privacy-text"> Право определять представителей для защиты своих персональных данных.</p>
+        <p class="privacy-text">Право требовать от ООО «УМНАЯ КНИГА» уведомления всех лиц, которым ранее были сообщены неверные или неполные персональные данные Клиента, обо всех произведенных в них изменениях или исключениях из них.</p>
+        <h3 class="privacy-title">Доступ к персональным данным Клиента</h3>
+        <p class="privacy-text">Персональные данные Клиента могут быть предоставлены третьим лицам только с письменного согласия Клиента.</p>
+        <p class="privacy-text">Доступ Клиента к своим персональным данным предоставляется при обращении либо при получении запроса Клиента. ООО «УМНАЯ КНИГА» обязан сообщить Клиенту информацию о наличии персональных данных о нем, а также предоставить возможность ознакомления с ними в течение тридцати рабочих дней с момента обращения или получения запроса.</p>
+        <p class="privacy-text">Запрос должен содержать номер основного документа, удостоверяющего личность субъекта персональных данных или его законного представителя, сведения о дате выдачи указанного документа и выдавшем его органе и собственноручную подпись субъекта персональных данных или его законного представителя. Запрос может быть направлен в электронной форме и подписан электронной цифровой подписью в соответствии с законодательством Российской Федерации.</p>
+
+        <p class="privacy-text"> Клиент имеет право на получение при обращении или при получении запроса информации, касающейся обработки его персональных данных, в том числе содержащей:</p>
+
+        <p class="privacy-text"> подтверждение факта обработки персональных данных ООО «УМНАЯ КНИГА», а также цель такой обработки; способы обработки персональных данных, применяемые ООО «УМНАЯ КНИГА»;</p>
+        <p class="privacy-text">сведения о лицах, которые имеют доступ к персональным данным или которым может быть предоставлен такой доступ;</p>
+        <p class="privacy-text">перечень обрабатываемых персональных данных и источник их получения;
+        <p class="privacy-text"> сроки обработки персональных данных, в том числе сроки их хранения;
+        <p class="privacy-text">сведения о том, какие юридические последствия для Клиента может повлечь за собой обработка его персональных данных.</p>
+        <p class="privacy-text"> Сведения о наличии персональных данных должны быть предоставлены Клиенту в доступной форме, и в них не должны содержаться персональные данные, относящиеся к другим субъектам персональных данных.</p>
+        <p class="privacy-text">Право Клиента на доступ к своим персональным данным ограничивается в случае, если предоставление персональных данных нарушает конституционные права и свободы других лиц.</p>
+        <h3 class="privacy-title">Защита персональных данных</h3>
+        <p class="privacy-text">Под угрозой или опасностью утраты персональных данных понимается единичное или комплексное, реальное или потенциальное, активное или пассивное проявление злоумышленных возможностей внешних или внутренних источников угрозы создавать неблагоприятные события, оказывать дестабилизирующее воздействие на защищаемую информацию.</p>
+        <p class="privacy-text"> Риск угрозы любым информационным ресурсам создают стихийные бедствия, экстремальные ситуации, террористические действия, аварии технических средств и линий связи, другие объективные обстоятельства, а также заинтересованные и незаинтересованные в возникновении угрозы лица.</p>
+        <p class="privacy-text"> Защита персональных данных представляет собой жестко регламентированный и динамически технологический процесс, предупреждающий нарушение доступности, целостности, достоверности и конфиденциальности персональных данных и, в конечном счете, обеспечивающий достаточно надежную безопасность информации в процессе управленческой и производственной деятельности компании.</p>
+
+        <p class="privacy-text"> Регламентация доступа персонала к документам и базам данных с персональными сведениями входит в число основных направлений организационной защиты информации и предназначена для разграничения полномочий руководителями и специалистами компании. Для защиты персональных данных субъектов необходимо соблюдать ряд мер:</p>
+
+        <p class="privacy-text"> ограничение и регламентация состава работников, функциональные обязанности которых требуют конфиденциальных знаний;</p>
+        <p class="privacy-text"> строгое избирательное и обоснованное распределение документов и информации между работниками;</p>
+        <p class="privacy-text"> рациональное размещение рабочих мест работников, при котором исключалось бы бесконтрольное использование защищаемой информации;</p>
+        <p class="privacy-text"> знание работником требований нормативно – методических документов по защите информации и сохранении тайны;</p>
+        <p class="privacy-text">наличие необходимых условий в помещении для работы с документами и базами данных с персональными сведениями;</p>
+        <p class="privacy-text">определение и регламентация состава работников, имеющих право доступа (входа) в помещение, в котором находится вычислительная техника;</p>
+        <p class="privacy-text"> организация порядка уничтожения информации;</p>
+        <p class="privacy-text"> своевременное выявление нарушения требований разрешительной системы доступа работниками подразделения;</p>
+        <p class="privacy-text"> воспитательная и разъяснительная работа с сотрудниками подразделения по предупреждению утраты ценных сведений при работе с документами, содержащими персональные данные.</p>
+        <p class="privacy-text"> Для защиты персональных данных создаются целенаправленные неблагоприятные условия и труднопреодолимые препятствия для лица, пытающегося совершить несанкционированный доступ и овладение информацией. Целью и результатом несанкционированного доступа к информационным ресурсам может быть не только овладение ценными сведениями и их использование, но и их видоизменение, уничтожение, внесение вируса, подмена, фальсификация содержания реквизитов документа и др.</p>
+        <p class="privacy-text"> Под посторонним лицом понимается любое лицо, не имеющее непосредственного отношения к деятельности компании, посетители, работники других организационных структур.</p>
+        <p class="privacy-text"> Посторонние лица не должны знать распределение функций, рабочие процессы, технологию составления, оформления, ведения и хранения документов, дел и рабочих материалов в отделе персонала.</p>
+
+        <p class="privacy-text"> Для защиты персональных данных Клиентов необходимо соблюдать ряд мер:</p>
+
+        <p class="privacy-text"> порядок приема, учета и контроля деятельности посетителей;</p>
+        <p class="privacy-text"> технические средства охраны, сигнализации;</p>
+        <p class="privacy-text"> порядок охраны помещений, транспортных средств;</p>
+        <p class="privacy-text"> требования к защите информации, предъявляемые соответствующими нормативными документами.</p>
+        <p class="privacy-text"> Лица, виновные в нарушении норм, регулирующих получение, обработку и защиту персональных данных, несут дисциплинарную, административную, гражданско-правовую или уголовную ответственность в соответствии с федеральными законами.</p>
+        <h3 class="privacy-title">Ответственность за разглашение персональных данных и нарушение</h3>
+        <p class="privacy-text">ООО «УМНАЯ КНИГА» ответственно за персональную информацию, которая находится в его распоряжении и закрепляет персональную ответственность сотрудников за соблюдением, установленных в организации принципов уважения приватности.</p>
+        <p class="privacy-text">Каждый сотрудник ООО «УМНАЯ КНИГА» получающий для работы доступ к материальным носителям персональным данных, несет ответственность за сохранность носителя и конфиденциальность информации.</p>
+        <p class="privacy-text"> ООО «УМНАЯ КНИГА» обязуется поддерживать систему приема, регистрации и контроля рассмотрения жалоб клиентов, доступную как посредством использования Интернета, так и с помощью телефонной, телеграфной или почтовой связи.</p>
+        <p class="privacy-text"> Любое лицо может обратиться к сотруднику ООО «УМНАЯ КНИГА» с жалобой на нарушение данной Политики. Жалобы и заявления по поводу соблюдения требований обработки данных рассматриваются в течение тридцати рабочих дней с момента поступления.</p>
+        <p class="privacy-text">Сотрудники ООО «УМНАЯ КНИГА» обязаны на должном уровне обеспечивать рассмотрение запросов, заявлений и жалоб клиентов, а также содействовать исполнению требований компетентных органов. Лица, виновные в нарушении требований настоящей политики, привлекаются к дисциплинарной ответственности.</p>
+        <a class="privacy-button button" href="">К покупкам</a>
+      </div>
+
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <div class="page-footer__content">
+          <div class="page-footer__colmain">
+            <a class="page-footer__colmain-logo" href=""></a>
+            <div class="page-footer__colmain-item">
+              <div class="page-footer__colmain-item-icon page-footer__colmain-item-icon_home icon_size"></div>
+              <p class="page-footer__colmain-item-text">г. Саратов, ул. им. Чапаева В. И., д. 69</p>
+            </div>
+            <div class="page-footer__colmain-item">
+              <div class="page-footer__colmain-item-icon page-footer__colmain-item-icon_tel icon_size"></div>
+              <a class="page-footer__colmain-item-text" href="tel:88452273710">8 (8452) 27-37-10</a>
+            </div>
+            <div class="page-footer__colmain-item">
+              <div class="page-footer__colmain-item-icon page-footer__colmain-item-icon_mail icon_size"></div>
+              <a class="page-footer__colmain-item-text" href="mailto:info@umkniga64.ru">info@umkniga64.ru</a>
+            </div>
+          </div>
+          <div class="page-footer__collist">
+            <p class="page-footer__collist-title">Информация</p>
+            <ul class="page-footer__list">
+              <li class="page-footer__item">
+                <a class="page-footer__item-link" href="">О нас</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__item-link" href="">Политика конфиденциальности</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__item-link" href="">Доставка и оплата</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__item-link" href="">Условия и положения</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__collist">
+            <p class="page-footer__collist-title">Служба поддержки</p>
+            <ul class="page-footer__list">
+              <li class="page-footer__item">
+                <a class="page-footer__item-link" href="">Связаться с нами</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__item-link" href="">Возврат товара</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__item-link" href="">Карта сайта</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__collist">
+            <p class="page-footer__collist-title">Личный Кабинет</p>
+            <ul class="page-footer__list">
+              <li class="page-footer__item">
+                <a class="page-footer__item-link" href="">Личный Кабинет</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__item-link" href="">История заказов</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__item-link" href="">Закладки</a>
+              </li>
+              <li class="page-footer__item">
+                <a class="page-footer__item-link" href="">Рассылка</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__bottom">
+        <div class="page-footer__container container">
+          <p class="page-footer__bottom-text">© 2018 УмнаяКнига.РФ. <span>All rights reservered.</span></p>
+          <div class="page-footer__development">
+            <a href="">Разработка сайта</a>
+            <p>Space App</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+	</div>
+	<!-- <div class="modal-window">
+		<div class="modal-window-cancel"></div>
+		<div class="modal-window__block">
+			<h4 class="modal-window__block-title title">Обратный звонок</h4>
+			<form class="modal-window__feedback" action="">
+				<input class="modal-window__feedback-input" type="text" placeholder="Ваше имя">
+				<input class="modal-window__feedback-input" type="text" placeholder="Контактный номер телефона">
+				<input class="modal-window__feedback-input" type="text" placeholder="Ваш e-mail">
+				<textarea class="modal-window__feedback-input modal-window__feedback-textarea"  type="text" placeholder="Ваше сообщение"></textarea>
+				<p class="modal-window__feedback-text">Заполняя данную форму, Вы подтвреждаете, что ознакомились с <a class="modal-window__feedback-link" href="#">политикой конфиденциальности</a> и даете согласие на обработку персональных данных.</p>
+				<div class="modal-window__button">
+					<button class="modal-window__button-btn button btn_red">Заказать сейчас</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="modal__background"></div> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/owl.carousel.min.js"></script>
+   <script src="js/jquery.fancybox.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
