@@ -613,7 +613,7 @@
 
           <!-- Tab panes -->
           <div class="personal__tab-content tab-content">
-            <div class="personal__tab-pane tab-pane active" id="tab_1" role="tabpanel" aria-labelledby="tab_1_1">
+            <div class="personal__tab-pane tab-pane " id="tab_1" role="tabpanel" aria-labelledby="tab_1_1">
               <div class="personal-info">
                 <div class="personal-info__item">
                   <h3 class="personal-info__item-title personal-title">Моя информация</h3>
@@ -643,25 +643,222 @@
                 </div>
               </div>
             </div>
-            <div class="personal__tab-pane tab-pane" id="tab_2" role="tabpanel" aria-labelledby="tab_2_2">
-              <div class="personal-info">
-                <h3 class="personal-info-title personal-title">Контактная информация</h3>
-                <div class="">
-
+            <div class="personal__tab-pane tab-pane " id="tab_2" role="tabpanel" aria-labelledby="tab_2_2">
+              <div class="personal-info personal-feedback">
+                <h3 class="personal-feedback-title personal-title">Контактная информация</h3>
+                <form class="personal-feedback__form" action="">
+                  <div class="personal-feedback__input">
+                    <p class="personal-feedback__input-text"><span>*</span> Email</p>
+                    <input class="personal-feedback__input-field input" type="email">
+                  </div>
+                  <div class="personal-feedback__input">
+                    <p class="personal-feedback__input-text"><span>*</span> Имя</p>
+                    <input class="personal-feedback__input-field input" type="text">
+                  </div>
+                  <div class="personal-feedback__input">
+                    <p class="personal-feedback__input-text"><span>*</span> Фамилия</p>
+                    <input class="personal-feedback__input-field input" type="text">
+                  </div>
+                  <div class="personal-feedback__input">
+                    <p class="personal-feedback__input-text"><span>*</span> Телефон</p>
+                    <input class="personal-feedback__input-field input" type="tel">
+                  </div>
+                  <button class="personal-feedback__form-button button">Сохранить</button>
+                </form>
+              </div>
+            </div>
+            <div class="personal__tab-pane tab-pane " id="tab_3" role="tabpanel" aria-labelledby="tab_3_3">
+              <div class="personal-info personal-feedback">
+                <h3 class="personal-feedback-title personal-title">Смена пароля</h3>
+                <form class="personal-feedback__form" action="">
+                  <div class="personal-feedback__input">
+                    <p class="personal-feedback__input-text"><span>*</span> Старый пароль</p>
+                    <input class="personal-feedback__input-field input" type="password">
+                  </div>
+                  <div class="personal-feedback__input">
+                    <p class="personal-feedback__input-text"><span>*</span> Новый пароль</p>
+                    <input class="personal-feedback__input-field input" type="password">
+                  </div>
+                  <div class="personal-feedback__input">
+                    <p class="personal-feedback__input-text"><span>*</span> Повторите пароль</p>
+                    <input class="personal-feedback__input-field input" type="password">
+                  </div>
+                  <div class="personal-feedback__buttons">
+                    <button class="personal-feedback__form-button button">Сохранить</button>
+                    <button class="personal-feedback__form-button button button_grey">Назад</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="personal__tab-pane tab-pane" id="tab_4" role="tabpanel" aria-labelledby="tab_4_4">
+              <div class="personal-info personal-feedback">
+                <h3 class="personal-feedback-title personal-title">Список адресов доставки</h3>
+                <div class="personal-feedback__block">
+                  <div class="personal-feedback-content">
+                    <p class="personal-feedback-content">Alexey Lysenko</p>
+                    <p class="personal-feedback-content">ул. Новоузенская, 61, 33</p>
+                    <p class="personal-feedback-content">САРАТОВ 410004</p>
+                    <p class="personal-feedback-content">Ain Defla</p>
+                    <p class="personal-feedback-content">Algeria</p>
+                  </div>
+                  <div class="personal-feedback__buttons">
+                    <button class="personal-feedback__form-button button">Редактировать</button>
+                    <button class="personal-feedback__form-button button button_grey">Удалить</button>
+                  </div>
+                </div>
+                <div class="personal-feedback__block">
+                  <h3 class="personal-feedback-title personal-title">Редактировать адрес</h3>
+                  <form class="personal-feedback__form" action="">
+                    <div class="personal-feedback__input">
+                      <p class="personal-feedback__input-text"><span>*</span> Имя</p>
+                      <input class="personal-feedback__input-field input" type="text">
+                    </div>
+                    <div class="personal-feedback__input">
+                      <p class="personal-feedback__input-text"><span>*</span> Фамилия</p>
+                      <input class="personal-feedback__input-field input" type="text">
+                    </div>
+                    <div class="personal-feedback__input">
+                      <p class="personal-feedback__input-text"><span>*</span> Страна</p>
+                      <input class="personal-feedback__input-field input" type="text">
+                    </div>
+                    <div class="personal-feedback__input">
+                      <p class="personal-feedback__input-text"><span>*</span> Регион</p>
+                      <input class="personal-feedback__input-field input" type="text">
+                    </div>
+                    <div class="personal-feedback__input">
+                      <p class="personal-feedback__input-text"><span>*</span> Город</p>
+                      <input class="personal-feedback__input-field input" type="text">
+                    </div>
+                    <div class="personal-feedback__input">
+                      <p class="personal-feedback__input-text"><span>*</span> Индекс</p>
+                      <input class="personal-feedback__input-field input" type="text">
+                    </div>
+                    <div class="personal-feedback__input">
+                      <p class="personal-feedback__input-text"><span>*</span> Адрес</p>
+                      <input class="personal-feedback__input-field input" type="text">
+                    </div>
+                    <div class="personal-feedback__input">
+                      <p class="personal-feedback__input-text">Основной адрес?</p>
+                      <label class="sort__first_item sort__first_agree as_form__agree">
+                        <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                        <input class="as_form__checkbox" type="radio" name="consent1">
+                        <span class="as_form__checkbox-custom"></span>
+                        <span class="as_form__check">Да</span>
+                      </label>
+                      <label class="sort__first_item sort__first_agree as_form__agree">
+                        <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                        <input class="as_form__checkbox" type="radio" name="consent1">
+                        <span class="as_form__checkbox-custom"></span>
+                        <span class="as_form__check">Нет</span>
+                      </label>
+                    </div>
+                    <div class="personal-feedback__buttons">
+                      <button class="personal-feedback__form-button button">Добавить адрес</button>
+                      <button class="personal-feedback__form-button button button_grey">Назад</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
-            <div class="personal__tab-pane tab-pane" id="tab_3" role="tabpanel" aria-labelledby="tab_3_3">
-              Содержимое 3 вкладки
-            </div>
-            <div class="personal__tab-pane tab-pane" id="tab_4" role="tabpanel" aria-labelledby="tab_4_4">
-              Содержимое 4 вкладки
-            </div>
             <div class="personal__tab-pane tab-pane" id="tab_5" role="tabpanel" aria-labelledby="tab_5_5">
-              Содержимое 5 вкладки
+              <div class="personal__box">
+                <div class="personal-bookmarks">
+                  <h3 class="personal-bookmarks-title personal-title">Закладки</h3>
+                  <div class="personal-bookmarks__top">
+                    <p class="personal-bookmarks__top-text">Товар</p>
+                    <p class="personal-bookmarks__top-text">Модель</p>
+                    <p class="personal-bookmarks__top-text">Наличие</p>
+                    <p class="personal-bookmarks__top-text">Цена за ед.</p>
+                  </div>
+                  <div class="personal-bookmarks__item">
+                    <div class="personal-bookmarks__block_1">
+                      <div class="personal-bookmarks__image">
+                        <img class="personal-bookmarks__image-pic" src="img/product_item.png" alt="">
+                      </div>
+                      <div class="personal-bookmarks__title">
+                        <p class="personal-bookmarks__title-text">Гарри Поттер.</p>
+                        <p class="personal-bookmarks__title-text">Комплект из 7 книг в футляре</p>
+                        <p class="personal-bookmarks__title-text">(Роулинг Дж.)</p>
+                      </div>
+                    </div>
+                    <p class="personal-bookmarks__item-model">978-5-08-004872-2</p>
+                    <p class="personal-bookmarks__item-days">5-7 дней</p>
+                    <div class="personal-bookmarks__block_2">
+                      <p class="personal-bookmarks__item-price">3 185 ₽</p>
+                      <button class="personal-bookmarks__item-button button">Купить</button>
+                      <div class="personal-bookmarks__item-cancel"></div>
+                    </div>
+                  </div>
+                  <div class="personal-bookmarks__item">
+                    <div class="personal-bookmarks__block_1">
+                      <div class="personal-bookmarks__image">
+                        <img class="personal-bookmarks__image-pic" src="img/product_item.png" alt="">
+                      </div>
+                      <div class="personal-bookmarks__title">
+                        <p class="personal-bookmarks__title-text">Гарри Поттер.</p>
+                        <p class="personal-bookmarks__title-text">Комплект из 7 книг в футляре</p>
+                        <p class="personal-bookmarks__title-text">(Роулинг Дж.)</p>
+                      </div>
+                    </div>
+                    <p class="personal-bookmarks__item-model">978-5-08-004872-2</p>
+                    <p class="personal-bookmarks__item-days">5-7 дней</p>
+                    <div class="personal-bookmarks__block_2">
+                      <p class="personal-bookmarks__item-price">3 185 ₽</p>
+                      <button class="personal-bookmarks__item-button button">Купить</button>
+                      <div class="personal-bookmarks__item-cancel"></div>
+                    </div>
+                  </div>
+                </div>
+                <button class="button button_grey">Назад</button>
+              </div>
             </div>
-            <div class="personal__tab-pane tab-pane" id="tab_6" role="tabpanel" aria-labelledby="tab_6_6">
-              Содержимое 6 вкладки
+            <div class="personal__tab-pane tab-pane active" id="tab_6" role="tabpanel" aria-labelledby="tab_6_6">
+              <div class="personal__box">
+                <div class="personal-bookmarks personal-story">
+                  <h3 class="personal-story-title personal-title">История заказов</h3>
+                  <div class="personal-story__top">
+                    <p class="personal-story__top-text">№ заказа</p>
+                    <p class="personal-story__top-text">Покупатель</p>
+                    <p class="personal-story__top-text">Наименований</p>
+                    <p class="personal-story__top-text">Всего</p>
+                    <p class="personal-story__top-text">Статус</p>
+                  </div>
+                  <div class="personal-story__item">
+                    <p class="personal-story__item-number">183</p>
+                    <div class="personal-story__title">
+                      <p class="personal-story__title-text">Алексей Лысенко</p>
+                      <p class="personal-story__title-text">410012 г. Саратов, ул. Б. Казачья, 18</p>
+                    </div>
+                    <p class="personal-story__item-items">5</p>
+                    <p class="personal-story__item-total">662.00 ₽</p>
+                    <div class="personal-story__block">
+                      <p class="personal-story__item-status">Ожидание</p>
+                      <div class="personal-story__block_1">
+                        <a class="personal-story__item-view" href=""></a>
+                        <a class="personal-story__item-repeat" href=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="personal-story__item">
+                    <p class="personal-story__item-number">183</p>
+                    <div class="personal-story__title">
+                      <p class="personal-story__title-text">Алексей Лысенко</p>
+                      <p class="personal-story__title-text">410012 г. Саратов, ул. Б. Казачья, 18</p>
+                    </div>
+                    <p class="personal-story__item-items">5</p>
+                    <p class="personal-story__item-total">662.00 ₽</p>
+                    <div class="personal-story__block">
+                      <p class="personal-story__item-status">Ожидание</p>
+                      <div class="personal-story__block_1">
+                        <a class="personal-story__item-view" href=""></a>
+                        <a class="personal-story__item-repeat" href=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="button button_grey">Назад</button>
+
+              </div>
             </div>
             <div class="personal__tab-pane tab-pane" id="tab_7" role="tabpanel" aria-labelledby="tab_7_7">
               Содержимое 7 вкладки
@@ -672,8 +869,32 @@
             <div class="personal__tab-pane tab-pane" id="tab_9" role="tabpanel" aria-labelledby="tab_9_9">
               Содержимое 9 вкладки
             </div>
-            <div class="personal__tab-pane tab-pane" id="tab_10" role="tabpanel" aria-labelledby="tab_10_10">
-              Содержимое 10 вкладки
+            <div class="personal__tab-pane tab-pane " id="tab_10" role="tabpanel" aria-labelledby="tab_10_10">
+              <div class="personal-info personal-feedback">
+                <div class="personal-feedback__block">
+                  <h3 class="personal-feedback-title personal-title">E-mail Рассылка</h3>
+                  <form class="personal-feedback__form" action="">
+                    <div class="personal-feedback__input personal-feedback__radio">
+                      <p class="personal-feedback__input-text">Подписаться на новости и эксклюзивные предложения:</p>
+                      <label class="sort__first_item sort__first_agree as_form__agree">
+                        <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                        <input class="as_form__checkbox" type="radio" name="consent1">
+                        <span class="as_form__checkbox-custom"></span>
+                        <span class="as_form__check">Да</span>
+                      </label>
+                      <label class="sort__first_item sort__first_agree as_form__agree">
+                        <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                        <input class="as_form__checkbox" type="radio" name="consent1">
+                        <span class="as_form__checkbox-custom"></span>
+                        <span class="as_form__check">Нет</span>
+                      </label>
+                    </div>
+                    <div class="personal-feedback__buttons">
+                      <button class="personal-feedback__form-button button">Сохранить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
             <div class="personal__tab-pane tab-pane" id="tab_11" role="tabpanel" aria-labelledby="tab_11_11">
               Содержимое 11 вкладки
