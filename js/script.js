@@ -37,8 +37,40 @@ $(document).on('click', '.custom-input-number .cin-increment', function(e) {
 // });
 
 //sliders
-$(document).ready(function () {
 
+$(document).ready(function () {
+  $(".detail__qwe").owlCarousel({
+		loop:true,
+		items:1,
+		margin:0,
+		stagePadding: 0,
+		autoplay:false
+	});
+
+	dotcount = 1;
+
+	$('.owl-dot').each(function() {
+		$( this ).addClass( 'dotnumber' + dotcount);
+		$( this ).attr('data-info', dotcount);
+		dotcount=dotcount+1;
+	});
+
+	slidecount = 1;
+
+	$('.owl-item').not('.cloned').each(function() {
+		$( this ).addClass( 'slidenumber' + slidecount);
+		slidecount=slidecount+1;
+	});
+
+	$('.owl-dot').each(function() {
+		grab = $(this).data('info');
+		slidegrab = $('.slidenumber'+ grab +' img').attr('src');
+		$(this).css("background-image", "url("+slidegrab+")");
+	});
+
+	amount = $('.owl-dot').length;
+	gotowidth = 100/amount;
+	$('.owl-dot').css("height", gotowidth+"%");
 
   $('.promo__slider').owlCarousel({
     animateOut: 'slideOutDown',
@@ -200,6 +232,9 @@ let basketButton = document.querySelector('.page-header__block'),
     menuСontent = document.querySelector('.page-header__bottom-button'),
     navMenu = document.querySelector('.promo__menu'),
 
+    menuSort = document.querySelector('.sort__button'),
+    navSort = document.querySelector('.sort__filter'),
+
     lkPersonal = document.querySelector('.personal__button'),
     lkPersonalMenu = document.querySelector('.personal__nav'),
     linkPersonal = document.querySelectorAll('personal__link');
@@ -226,6 +261,10 @@ menuСontent.addEventListener('click', function() {
 lkPersonal.addEventListener('click', function() {
   lkPersonal.classList.toggle('active_menu');
   lkPersonalMenu.classList.toggle('openmenu');
+});
+
+menuSort.addEventListener('click', function() {
+  navSort.classList.toggle('openmenu');
 });
 
 linkPersonal.forEach(el => {

@@ -613,7 +613,7 @@
 
           <!-- Tab panes -->
           <div class="personal__tab-content tab-content">
-            <div class="personal__tab-pane tab-pane " id="tab_1" role="tabpanel" aria-labelledby="tab_1_1">
+            <div class="personal__tab-pane tab-pane active" id="tab_1" role="tabpanel" aria-labelledby="tab_1_1">
               <div class="personal-info">
                 <div class="personal-info__item">
                   <h3 class="personal-info__item-title personal-title">Моя информация</h3>
@@ -812,46 +812,78 @@
                 <button class="button button_grey">Назад</button>
               </div>
             </div>
-            <div class="personal__tab-pane tab-pane active" id="tab_6" role="tabpanel" aria-labelledby="tab_6_6">
+            <div class="personal__tab-pane tab-pane" id="tab_6" role="tabpanel" aria-labelledby="tab_6_6">
               <div class="personal__box">
                 <div class="personal-bookmarks personal-story">
                   <h3 class="personal-story-title personal-title">История заказов</h3>
-                  <div class="personal-story__top">
-                    <p class="personal-story__top-text">№ заказа</p>
-                    <p class="personal-story__top-text">Покупатель</p>
-                    <p class="personal-story__top-text">Наименований</p>
-                    <p class="personal-story__top-text">Всего</p>
-                    <p class="personal-story__top-text">Статус</p>
-                  </div>
-                  <div class="personal-story__item">
-                    <p class="personal-story__item-number">183</p>
-                    <div class="personal-story__title">
-                      <p class="personal-story__title-text">Алексей Лысенко</p>
-                      <p class="personal-story__title-text">410012 г. Саратов, ул. Б. Казачья, 18</p>
-                    </div>
-                    <p class="personal-story__item-items">5</p>
-                    <p class="personal-story__item-total">662.00 ₽</p>
-                    <div class="personal-story__block">
-                      <p class="personal-story__item-status">Ожидание</p>
-                      <div class="personal-story__block_1">
-                        <a class="personal-story__item-view" href=""></a>
-                        <a class="personal-story__item-repeat" href=""></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="personal-story__item">
-                    <p class="personal-story__item-number">183</p>
-                    <div class="personal-story__title">
-                      <p class="personal-story__title-text">Алексей Лысенко</p>
-                      <p class="personal-story__title-text">410012 г. Саратов, ул. Б. Казачья, 18</p>
-                    </div>
-                    <p class="personal-story__item-items">5</p>
-                    <p class="personal-story__item-total">662.00 ₽</p>
-                    <div class="personal-story__block">
-                      <p class="personal-story__item-status">Ожидание</p>
-                      <div class="personal-story__block_1">
-                        <a class="personal-story__item-view" href=""></a>
-                        <a class="personal-story__item-repeat" href=""></a>
+                  <div class="table">
+                    <div class="table__container container">
+                      <div class="table-wrap">
+                        <table class="table__table">
+                          <thead class="table__thead">
+                            <tr class="table__tr">
+                              <th class="table__tr-th table__tr-th_number" rowspan="2">№ заказа</th>
+                              <th class="table__tr-th table__tr-th_title" rowspan="2">Покупатель</th>
+                              <th class="table__tr-th table__tr-th_items" rowspan="2">Наименований</th>
+                              <th class="table__tr-th table__tr-th_total" rowspan="2">Всего</th>
+                              <th class="table__tr-th table__tr-th_status" rowspan="2">Статус</th>
+                            </tr>
+                          </thead>
+                          <tbody class="table__tbody">
+                            <tr class="table__tr">
+                              <td class="table__tr-td" data-label="№ заказа">183</td>
+                              <td class="table__tr-td" data-label="Покупатель">
+                                <p class="table__tbody-text">Алексей Лысенко</p>
+                                <p class="table__tbody-text">410012 г. Саратов, ул. Б. Казачья, 18</p>
+                              </td>
+                              <td class="table__tr-td" data-label="Наименований">2</td>
+                              <td class="table__tr-td" data-label="Всего">662.00 ₽ </td>
+                              <td class="table__tr-td" data-label="Статус">
+                                <p class="table__tbody-text">Ожидание</p>
+                                <div class="table__tbody__block">
+                                  <a class="table__tbody__block-view" href=""></a>
+                                  <a class="table__tbody__block-repeat" href=""></a>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <tbody class="table__tbody">
+                            <tr class="table__tr">
+                              <td class="table__tr-td" data-label="№ заказа">183</td>
+                              <td class="table__tr-td" data-label="Покупатель">
+                                <p class="table__tbody-text">Алексей Лысенко</p>
+                                <p class="table__tbody-text">410012 г. Саратов, ул. Б. Казачья, 18</p>
+                              </td>
+                              <td class="table__tr-td" data-label="Наименований">2</td>
+                              <td class="table__tr-td" data-label="Всего">662.00 ₽ </td>
+                              <td class="table__tr-td" data-label="Статус">
+                                <p class="table__tbody-text">Ожидание</p>
+                                <div class="table__tbody__block">
+                                  <a class="table__tbody__block-view" href=""></a>
+                                  <a class="table__tbody__block-repeat" href=""></a>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                          <tbody class="table__tbody">
+                            <tr class="table__tr">
+                              <td class="table__tr-td" data-label="№ заказа">183</td>
+                              <td class="table__tr-td" data-label="Покупатель">
+                                <p class="table__tbody-text">Алексей Лысенко</p>
+                                <p class="table__tbody-text">410012 г. Саратов, ул. Б. Казачья, 18</p>
+                              </td>
+                              <td class="table__tr-td" data-label="Наименований">2</td>
+                              <td class="table__tr-td" data-label="Всего">662.00 ₽ </td>
+                              <td class="table__tr-td" data-label="Статус">
+                                <p class="table__tbody-text">Ожидание</p>
+                                <div class="table__tbody__block">
+                                  <a class="table__tbody__block-view" href=""></a>
+                                  <a class="table__tbody__block-repeat" href=""></a>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
